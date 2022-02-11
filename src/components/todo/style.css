@@ -1,0 +1,89 @@
+.todo-item{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(62, 23, 134, 0.4);
+    cursor: pointer;
+}
+.todo-item:last-child{
+    border: none;
+}
+.todo-item:hover p{
+    color: rgb(62, 23, 134);
+    font-weight: 500;
+    transition: all 0.2s ease-out;
+}
+.completed{
+    width: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.title{
+    width: 80%;
+}
+.index{
+    width: 3%;
+    padding-right: 5px;
+}
+.delete{
+    cursor: pointer;
+    border: 1px solid rgb(62, 23, 134);
+    color: rgb(62, 23, 134);
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.2s ease-out;
+}
+.delete:hover{
+    background-color: rgb(62, 23, 134);
+    color: white;
+    transition: all 0.2s ease-out;
+}
+.done{
+    color: green;
+}
+.edit{
+    cursor: pointer;
+    border: 1px solid green;
+    color: green;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.2s ease-out;
+}
+.edit:hover{
+    background-color: green;
+    color: white;
+    transition: all 0.2s ease-out;
+}
+.status{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+.paginationBtns{
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+.paginationBtns a{
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(62, 23, 134);
+    color: rgb(62, 23, 134);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease-out;
+}
+.paginationBtns a:hover{
+    background-color: rgb(62, 23, 134);
+    color: white;
+    transition: all 0.2s ease-out;
+}
+.paginationActive a{
+    background-color: rgb(62, 23, 134);
+    color: white;
+}
