@@ -13,10 +13,10 @@ export default function Main() {
             <img src={logo}/>
             <h2>Todo test app</h2>
             <ul>
-                <li>You can add todo note</li>
-                <li>Delete todo note</li>
-                <li>Edit todo note</li>
+                <li>You can add, remove and edit todo note</li>
                 <li>Set todo note as done, just click on todo item</li>
+                <li>Make all items done and remove all completed items</li>
+                <li>Has inexistent page and adaptive for all devices</li>
             </ul>
             <div className="stack-div">
                 <FaReact className="stack"/>

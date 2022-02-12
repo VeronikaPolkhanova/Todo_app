@@ -1,4 +1,4 @@
-import { ADD_NOTES, REMOVE_NOTES, ADD_ALL_API, SET_DONE, EDIT_NOTES } from './actions';
+import { ADD_NOTES, REMOVE_NOTES, ADD_ALL_API, SET_DONE, EDIT_NOTES, MAKE_ALL_DONE, REMOVE_ALL_DONE } from './actions';
 
 
 const defaultState = {
@@ -9,7 +9,6 @@ const reducer = (state = defaultState, action) => {
     switch (action.type) {
         case ADD_NOTES:
             if (action.payload === undefined || action.payload === null || action.payload === "") return state
-
             else return {
                 ...state, notes: [
                     {
@@ -19,7 +18,7 @@ const reducer = (state = defaultState, action) => {
                         completed: false,
                     }, ...state.notes]
             }
-            
+
         case REMOVE_NOTES:
             return { ...state, notes: state.notes.filter(it => it.id !== action.payload) }
 
@@ -44,6 +43,14 @@ const reducer = (state = defaultState, action) => {
                     else return { ...it }
                 })
             }
+
+        case MAKE_ALL_DONE:
+            return {
+                notes: state.notes.map(it =>({...it, completed: true}))
+            }
+
+        case REMOVE_ALL_DONE:
+            return { ...state, notes: state.notes.filter(it => it.completed === false) }
 
         case ADD_ALL_API:
             return { ...state, notes: [...action.payload] }

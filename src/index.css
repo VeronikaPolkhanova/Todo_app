@@ -9,7 +9,7 @@ ul{
   padding: 20px 30px;
   margin: 0;
   border: 0.8px solid rgb(62, 23, 134, 0.4);
-border-radius: 10px;
+  border-radius: 10px;
 }
 a{
   text-decoration: none;
@@ -37,3 +37,66 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@media (min-width: 320px) and (max-width: 1199.98px) {
+  body{
+    margin: 2% 0%;
+  }
+  .page {
+    margin: 0 10%;
+  }
+  .page-todo{
+    margin: 2%;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1790px) {
+    nav{
+      width: 20%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  nav{
+    width: 30%;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  nav{
+    width: 20%;
+  }
+}
+@media (min-width: 650px) and (max-width: 1000px) {
+  nav{
+    width: 25%;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 450px) and (max-width: 650px) {
+  nav{
+    width: 35%;
+    margin-bottom: 10px;
+  }
+  .page-todo .status{
+    margin-right: 5px;
+  }
+  .page-todo ul{
+    padding: 5%;
+  }
+  .make-container{
+    text-align: center !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 450px) {
+  nav{
+    width: 55%;
+    margin-bottom: 10px;
+  }
+  .page-todo .status{
+    margin-right: 5px;
+  }
+  .page-todo ul{
+    padding: 5%;
+  }
+  .make-container{
+    text-align: center !important;
+  }
+}
+

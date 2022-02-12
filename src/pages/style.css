@@ -34,6 +34,7 @@ input[type=submit]:hover{
 .page {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .page ul{
     text-align: center;

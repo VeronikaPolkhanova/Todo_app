@@ -1,4 +1,4 @@
-import {AddApiAction} from './actions';
+import { AddApiAction } from './actions';
 
 const fetchNotes = () => {
     return function (dispatch) {

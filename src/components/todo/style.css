@@ -10,6 +10,9 @@
 .todo-item:last-child{
     border: none;
 }
+.todo-item p{
+    transition: all 0.2s ease-out;
+}
 .todo-item:hover p{
     color: rgb(62, 23, 134);
     font-weight: 500;
@@ -86,4 +89,21 @@
 .paginationActive a{
     background-color: rgb(62, 23, 134);
     color: white;
+}
+.empty-msg{
+    text-align: center;
+    color: rgb(62, 23, 134);
+    padding: 20px 0 0;
+}
+.make-container{
+    text-align: end;
+    padding-bottom: 10px;
+}
+.make-btn{
+    color: rgb(62, 23, 134);
+    margin: 10px 0 10px 10px !important;
+    cursor: pointer;
+}
+.make-btn:hover{
+    border-bottom: 1px solid rgb(62, 23, 134);
 }

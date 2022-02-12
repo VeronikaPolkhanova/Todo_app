@@ -10,7 +10,7 @@ function App() {
     <React.Fragment>
       <Nav/>
       <Routes>
-          <Route path="/" element={<Main/>}/>
+          <Route exact path="/" element={<Main/>}/>
           <Route path="/todo-list" element={<TodoList/>}/>
           <Route path="*" element={<NonPage/>}/>
       </Routes>
